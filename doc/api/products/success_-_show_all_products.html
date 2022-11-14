@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Products API</h1>
+
+      <div class="article">
+        <h2>Success - Show all products</h2>
+        <h3>GET /api/v1/products</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Version: HTTP/1.0
+Access-Token: UNMFUAabsy5UVr6rxrS0mA
+Client: KQlkblBs2OyF0-ZZgSkijQ
+Uid: jhon@gmail.com
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/products</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+access-token:  
+token-type: Bearer
+client: KQlkblBs2OyF0-ZZgSkijQ
+expiry:  
+uid: jhon@gmail.com
+Authorization: Bearer eyJhY2Nlc3MtdG9rZW4iOiJVTk1GVUFhYnN5NVVWcjZyeHJTMG1BIiwidG9rZW4tdHlwZSI6IkJlYXJlciIsImNsaWVudCI6IktRbGtibEJzMk95RjAtWlpnU2tpalEiLCJleHBpcnkiOiIxNjY4NTgzOTUxIiwidWlkIjoiamhvbkBnbWFpbC5jb20ifQ==
+Set-Cookie: _interslice_session=hJYA%2FHkn1GNRkOUAYkBM%2BC8F6i%2BEkCaDv8GN285MsYO%2FkdYM74QHJLe8jV7%2B1ORaN1V5OK6%2FuOuSSaGLTzLJvwHxXyodFBx%2BvrV%2FbzNmkgThbJthxlbDCvh0KTBU8ImmeP0h5fd8HY8kbw4cvV8PRXKPMJy4G2O8Ew3KYGhyQR885DgnoMxJCh2cN8PLeeIXVFeqMGwh12gIPhoqlrRakjMp2dbfjpV%2FQ6E8q8DQOI63jAfcMYGSAXl%2FRVlbDe%2BFrPF8tH5sZNOc0Ni92hA7ouKtjN6uKMfQ5JPyT8srC%2B8brzrDnTM5VakhliJV24aLpNHZqZVPEQ%3D%3D--iOkgkny3OBi3odhm--M6zoTAa0GejZ8PfXnOgByQ%3D%3D; path=/; HttpOnly; SameSite=Lax
+ETag: W/&quot;6da73809f9bac76359eb8cdb754a0c98&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b5acef95-4f84-4ea7-a192-0fbd28fa85ca
+X-Runtime: 0.009424
+Vary: Origin
+Content-Length: 359</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[binary data]</pre>
+      </div>
+    </div>
+  </body>
+</html>
