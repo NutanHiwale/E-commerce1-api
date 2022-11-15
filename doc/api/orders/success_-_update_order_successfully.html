@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Orders API</h1>
+
+      <div class="article">
+        <h2>Success - update order successfully</h2>
+        <h3>PUT /api/v1/orders/:id</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Version: HTTP/1.0
+Access-Token: f1w1WH6o2YQK8R9ex8y0gA
+Client: qwem-X6zpZnQi8YNwxT-Bg
+Uid: l@gmail.com
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">PUT /api/v1/orders/521</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">order[name]=Shirt+updated&order[quantity]=2&order[price]=1000</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+access-token:  
+token-type: Bearer
+client: qwem-X6zpZnQi8YNwxT-Bg
+expiry:  
+uid: l@gmail.com
+Authorization: Bearer eyJhY2Nlc3MtdG9rZW4iOiJmMXcxV0g2bzJZUUs4UjlleDh5MGdBIiwidG9rZW4tdHlwZSI6IkJlYXJlciIsImNsaWVudCI6InF3ZW0tWDZ6cFpuUWk4WU53eFQtQmciLCJleHBpcnkiOiIxNjY4NTgzOTUwIiwidWlkIjoibEBnbWFpbC5jb20ifQ==
+Set-Cookie: _interslice_session=8UCnA9mwjeNYqdAbNZf7hupX2BXIPDNOWuUc%2FvKoRoDNfioS%2BJPx33DwGy6I698aXrrCBq8TrJsAsZh3pCqEsZgVgsxpJooILeJsspZzPaxhm2UmDloaBc10Tp%2FJZoXPQgmEewqICvbeXJJZyHyNv7QGeDbpnKBh0Eei5VnVqamvxf60AI45y85WP7zQkPWRwR3MlXh1vVfDARV65sqcNbBwoPw1RqJeNqQdbG%2BSInkh0eGT0OCfahroolfUEcRILpb9qdHQkXvrpyMfUEHnCaRySQyAmlIjZEAHZOLpzj7IRNO9ZVXNc0PXcWmZHD3LPL1ICj5Wqw%3D%3D--q4TpdfPORszGObf6--PDYeNDLokJCB8ElLTx9f5g%3D%3D; path=/; HttpOnly; SameSite=Lax
+ETag: W/&quot;db99c380a95bea43b97d4e326397df03&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b5fbbffc-6f11-443b-b553-ce6e71969ce5
+X-Runtime: 0.013185
+Vary: Origin
+Content-Length: 41</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[binary data]</pre>
+      </div>
+    </div>
+  </body>
+</html>
